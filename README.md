@@ -1,5 +1,5 @@
 ### MapReduce program for IMDb dataset
-## Steps to execute:
+## Steps to execute: (Make sure to put the input imdb datasets in the input folder first)
 1. Execute the java program
 javac -classpath $(hadoop classpath) -d ./ imdb_mr.java
 
