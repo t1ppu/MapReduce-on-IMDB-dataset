@@ -1,0 +1,5 @@
+SELECT tb.tconst, tb.titletype, tb.primarytitle, tb.startyear, tc.directors, nb.nconst
+FROM imdb00.TITLE_BASICS tb
+JOIN imdb00.TITLE_CREW tc on tb.tconst = tc.tconst
+JOIN imdb00.title_principals nb on nb.tconst = tb.tconst
+WHERE startyear >= '1960' AND startyear <= '1970' AND titletype = 'tvMovie' AND nb.nconst = tc.tconst
